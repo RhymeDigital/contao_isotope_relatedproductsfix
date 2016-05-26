@@ -1,0 +1,41 @@
+{
+    "name": "rhymedigital/contao_isotope_relatedproductsfix",
+    "description": "Adds back in product search capabilities to the backend entry for related products",
+    "keywords": [
+    	"contao", 
+    	"isotope"
+    ],
+    "type": "contao-module",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Rhyme Digital",
+            "homepage": "http://rhyme.digital"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "contao/core": ">=3.3.0,<4.0.0-dev",
+        "contao-community-alliance/composer-installer": "*",
+        "isotope/isotope-core" : "^3.5.2 || ~4.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "Rhyme\\": [
+                "library/"
+            ]
+        }
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "": "system/modules/isotope_relatedproductsfix"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "preferred-install": "dist"
+    }
+}
